@@ -7,6 +7,8 @@ import { MembersComponent } from './members/members.component';
 import { HallComponent } from './hall/hall.component';
 import { DonationComponent } from './donation/donation.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
+import { GalleryModule } from '@ngx-gallery/core';
+import { LightboxModule } from '@ngx-gallery/lightbox';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -19,7 +21,7 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  imports: [GalleryModule, LightboxModule, RouterModule.forRoot(routes)],
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}
