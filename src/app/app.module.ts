@@ -15,9 +15,10 @@ import { MembersComponent } from './members/members.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { DonationComponent } from './donation/donation.component';
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
-  imports: [BrowserModule, FormsModule, IvyCarouselModule],
+  imports: [BrowserModule, FormsModule, IvyCarouselModule, AppRoutingModule],
   declarations: [AppComponent, HelloComponent, HallComponent, AboutUsComponent, GalleryComponent, ContactUsComponent, HomeComponent, MembersComponent, HeaderComponent, FooterComponent, DonationComponent],
   bootstrap: [AppComponent]
 })
